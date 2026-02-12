@@ -21,3 +21,19 @@ rivers = {
 }
 for country in rivers.values():
     print(country.title())
+
+
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'rust',
+    'phil': 'python',
+}
+programmers = ['peter', 'jen', 'sarah', 'edward', 'caro', 'phil']
+for name in programmers:
+    if name in favorite_languages:
+        print(f'{name.title()}, thanks for responding')
+    elif name not in favorite_languages:
+        print(f'{name.title()}, your invited to take the poll.')
+
+    
